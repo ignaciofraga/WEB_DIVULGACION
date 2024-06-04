@@ -47,7 +47,8 @@ with col1:
 
     st.markdown(titulo_secundario, unsafe_allow_html=True)    
 
-    imagen_pagina = Image.open(foto_lura)     
+    imagen_pagina = Image.open(foto_lura)   
+    st.image(imagen_pagina)
 
     with open(archivo_recortable_lura, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
