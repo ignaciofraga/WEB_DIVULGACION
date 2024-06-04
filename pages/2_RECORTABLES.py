@@ -37,6 +37,12 @@ texto = 'Monta los barcos del Instituto Español de Oceanografía en tu propia c
 titulo_principal = '<p style="text-align:  center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
+# TEXTO
+texto = 'Descarga los recortables de los buques, busca unas tijeras y cola blanca y prepárate para explorar el mar!.'
+titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
+st.markdown(titulo_principal, unsafe_allow_html=True)
+
+
 # DESCARGA RECORTABLES
 
 col1, col2 = st.columns(2,gap="large")
@@ -56,7 +62,8 @@ with col1:
     st.download_button(label="DESCARGAR RECORTABLE",
                     data=PDFbyte,
                     file_name="RECORTABLE_LURA_IEO.pdf",
-                    mime='application/octet-stream')
+                    mime='application/octet-stream',
+                    use_container_width=True)
 
 with col2:
 
@@ -72,7 +79,8 @@ with col2:
     st.download_button(label="DESCARGAR RECORTABLE",
                     data=PDFbyte,
                     file_name="RECORTABLE_ALVARIÑO_IEO.pdf",
-                    mime='application/octet-stream')
+                    mime='application/octet-stream',
+                    use_container_width=True)
 
 
 
@@ -138,7 +146,8 @@ with col1:
     st.download_button(label="DESCARGAR RECORTABLE",
                     data=PDFbyte,
                     file_name="RECORTABLE_MARGALEF_IEO.pdf",
-                    mime='application/octet-stream')
+                    mime='application/octet-stream',
+                    use_container_width=True)
 
 
 
