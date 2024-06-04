@@ -39,7 +39,7 @@ st.markdown(titulo_principal, unsafe_allow_html=True)
 
 # DESCARGA RECORTABLES
 
-col1, col2 = st.columns(2,gap="big")
+col1, col2 = st.columns(2,gap="large")
 
 with col1:
 
