@@ -67,30 +67,6 @@ with col1:
 
 with col2:
 
-    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Ángeles Alvariño</p>'
-    st.markdown(titulo_secundario, unsafe_allow_html=True)    
-
-    imagen_pagina = Image.open(foto_alvarino)
-    st.image(imagen_pagina)     
-
-    with open(archivo_recortable_alvarino, "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
-
-    st.download_button(label="DESCARGAR RECORTABLE",
-                    data=PDFbyte,
-                    file_name="RECORTABLE_ALVARIÑO_IEO.pdf",
-                    mime='application/octet-stream',
-                    use_container_width=True)
-
-
-
-
-
-
-col1, col2 = st.columns(2,gap="large")
-
-with col1:
-
     titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Mytilus</p>'
 
     st.markdown(titulo_secundario, unsafe_allow_html=True)    
@@ -104,6 +80,33 @@ with col1:
     st.download_button(label="DESCARGAR RECORTABLE",
                     data=PDFbyte,
                     file_name="RECORTABLE_MYTILUS_IEO.pdf",
+                    mime='application/octet-stream',
+                    use_container_width=True)
+
+
+
+
+
+
+col1, col2 = st.columns(2,gap="large")
+
+
+
+
+with col1:
+
+    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Ángeles Alvariño</p>'
+    st.markdown(titulo_secundario, unsafe_allow_html=True)    
+
+    imagen_pagina = Image.open(foto_alvarino)
+    st.image(imagen_pagina)     
+
+    with open(archivo_recortable_alvarino, "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(label="DESCARGAR RECORTABLE",
+                    data=PDFbyte,
+                    file_name="RECORTABLE_ALVARIÑO_IEO.pdf",
                     mime='application/octet-stream',
                     use_container_width=True)
 
