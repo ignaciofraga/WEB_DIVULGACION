@@ -26,6 +26,9 @@ imagen_logo   = Image.open(logo_IEO_reducido)
 st.set_page_config(page_title="DIVULGACION IEO-CORUÑA",page_icon=logo_IEO_reducido)
 
 
+logo_cabecera = Image.open(logo_IEO_principal) 
+st.image(logo_cabecera)
+
 # Texto
 texto = 'Qué es el Lura?'
 titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
