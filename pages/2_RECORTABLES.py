@@ -11,11 +11,11 @@ from PIL import Image
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
 logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 
-foto_lura            = 'DATOS/IMAGENES/LURA.jpeg'    
-foto_alvarino        = 'DATOS/IMAGENES/ALVARIÑO.jpeg'
-foto_margalef        = 'DATOS/IMAGENES/MARGALEF.jpeg'
-foto_navarro         = 'DATOS/IMAGENES/PNAVARRO.jpeg'
-foto_mytilus         = 'DATOS/IMAGENES/MYTILUS.jpeg'
+foto_lura            = 'DATOS/IMAGENES/LURA.jpg'    
+foto_alvarino        = 'DATOS/IMAGENES/ALVARIÑO.jpg'
+foto_margalef        = 'DATOS/IMAGENES/MARGALEF.jpg'
+foto_navarro         = 'DATOS/IMAGENES/PNAVARRO.jpg'
+foto_mytilus         = 'DATOS/IMAGENES/MYTILUS.jpg'
 
 archivo_recortable_lura      = 'DATOS/RECORTABLES/LURA.pdf'
 archivo_recortable_alvarino  = 'DATOS/RECORTABLES/ANGELES_ALVARIÑO.pdf'
