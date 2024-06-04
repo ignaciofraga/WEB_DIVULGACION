@@ -129,7 +129,8 @@ with col2:
     st.download_button(label="DESCARGAR RECORTABLE",
                     data=PDFbyte,
                     file_name="RECORTABLE_PAULA_NAVARRO_IEO.pdf",
-                    mime='application/octet-stream')
+                    mime='application/octet-stream',
+                    use_container_width=True)
 
 
 
