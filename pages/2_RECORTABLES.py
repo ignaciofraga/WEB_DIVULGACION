@@ -26,7 +26,7 @@ archivo_recortable_paula_navarro  = 'DATOS/RECORTABLES/FRANCISCO_PAULA_NAVARRO.p
 
 
 imagen_logo   = Image.open(logo_IEO_reducido)
-st.set_page_config(page_title="CONOCE EL LURA",page_icon=logo_IEO_reducido)  # , layout="wide"
+st.set_page_config(page_title="DIVULGACION IEO-CORUÑA",page_icon=logo_IEO_reducido)  # , layout="wide"
 
 
 logo_cabecera = Image.open(logo_IEO_principal) 
@@ -39,7 +39,7 @@ st.markdown(titulo_principal, unsafe_allow_html=True)
 
 # DESCARGA RECORTABLES
 
-col1, col2 = st.columns(2,gap="large")
+col1, col2, col3 = st.columns(3,gap="large")
 
 with col1:
 
@@ -60,7 +60,11 @@ with col1:
 
 with col2:
 
-    imagen_pagina = Image.open(foto_alvarino)     
+    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Ángeles Alvariño</p>'
+    st.markdown(titulo_secundario, unsafe_allow_html=True)    
+
+    imagen_pagina = Image.open(foto_alvarino)
+    st.image(imagen_pagina)     
 
     with open(archivo_recortable_alvarino, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
@@ -69,6 +73,64 @@ with col2:
                     data=PDFbyte,
                     file_name="RECORTABLE_ALVARIÑO_IEO.pdf",
                     mime='application/octet-stream')
+
+with col3:
+
+    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Ramón de Margalef</p>'
+    st.markdown(titulo_secundario, unsafe_allow_html=True)    
+
+    imagen_pagina = Image.open(foto_margalef)
+    st.image(imagen_pagina)     
+
+    with open(archivo_recortable_margalef, "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(label="DESCARGAR RECORTABLE",
+                    data=PDFbyte,
+                    file_name="RECORTABLE_MARGALEF_IEO.pdf",
+                    mime='application/octet-stream')
+
+
+
+
+
+
+
+col1, col2 = st.columns(2,gap="large")
+
+with col1:
+
+    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Mytilus</p>'
+
+    st.markdown(titulo_secundario, unsafe_allow_html=True)    
+
+    imagen_pagina = Image.open(foto_mytilus)   
+    st.image(imagen_pagina)
+
+    with open(archivo_recortable_mytilus, "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(label="DESCARGAR RECORTABLE",
+                    data=PDFbyte,
+                    file_name="RECORTABLE_MYTILUS_IEO.pdf",
+                    mime='application/octet-stream')
+
+with col2:
+
+    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Francisco de Paula Navarro</p>'
+    st.markdown(titulo_secundario, unsafe_allow_html=True)    
+
+    imagen_pagina = Image.open(foto_navarro)
+    st.image(imagen_pagina)     
+
+    with open(archivo_recortable_paula_navarro, "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(label="DESCARGAR RECORTABLE",
+                    data=PDFbyte,
+                    file_name="RECORTABLE_PAULA_NAVARRO_IEO.pdf",
+                    mime='application/octet-stream')
+
 
 
 # #titulo_secundario = '<p style="text-align: center;font-family:Gothic Light; font-size: 20px;"> Imprime los planos en un A3, monta el barco y comienza a navegar</p>'

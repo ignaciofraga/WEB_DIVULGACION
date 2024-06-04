@@ -17,7 +17,7 @@ archivo_red          = 'DATOS/MICROSCOPIO.pdf'
 
 
 imagen_logo   = Image.open(logo_IEO_reducido)
-st.set_page_config(page_title="DIVULGACION CORUÑA",page_icon=logo_IEO_reducido)  # , layout="wide"
+st.set_page_config(page_title="DIVULGACION IEO-CORUÑA",page_icon=logo_IEO_reducido)  # , layout="wide"
 
 logo_cabecera = Image.open(logo_IEO_principal) 
 st.image(logo_cabecera)
