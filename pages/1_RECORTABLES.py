@@ -17,6 +17,12 @@ foto_margalef        = 'DATOS/IMAGENES/MARGALEF.jpg'
 foto_navarro         = 'DATOS/IMAGENES/PNAVARRO.jpg'
 foto_mytilus         = 'DATOS/IMAGENES/MYTILUS.jpg'
 
+foto_recortable_lura            = 'DATOS/IMAGENES/RECORTABLES/lura1.jpg'    
+foto_recortable_alvarino        = 'DATOS/IMAGENES/RECORTABLES/margalef1.jpg'
+foto_recortable_margalef        = 'DATOS/IMAGENES/RECORTABLES/margalef2.jpg'
+foto_recortable_navarro         = 'DATOS/IMAGENES/RECORTABLES/pnavarro1.jpg'
+foto_recortable_mytilus         = 'DATOS/IMAGENES/RECORTABLES/mytilus.jpg'
+
 archivo_recortable_lura      = 'DATOS/RECORTABLES/LURA.pdf'
 archivo_recortable_alvarino  = 'DATOS/RECORTABLES/ANGELES_ALVARIÑO.pdf'
 archivo_recortable_margalef  = 'DATOS/RECORTABLES/RAMON_MARGALEF.pdf'
@@ -55,7 +61,10 @@ with col1:
 
     imagen_pagina = Image.open(foto_lura)   
     st.image(imagen_pagina)
-
+    
+    imagen_pagina = Image.open(foto_recortable_lura)   
+    st.image(imagen_pagina)
+    
     with open(archivo_recortable_lura, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
@@ -72,6 +81,9 @@ with col2:
     st.markdown(titulo_secundario, unsafe_allow_html=True)    
 
     imagen_pagina = Image.open(foto_mytilus)   
+    st.image(imagen_pagina)
+
+    imagen_pagina = Image.open(foto_recortable_mytilus)   
     st.image(imagen_pagina)
 
     with open(archivo_recortable_mytilus, "rb") as pdf_file:
@@ -100,6 +112,9 @@ with col1:
 
     imagen_pagina = Image.open(foto_alvarino)
     st.image(imagen_pagina)     
+    
+    imagen_pagina = Image.open(foto_recortable_alvarino)   
+    st.image(imagen_pagina)
 
     with open(archivo_recortable_alvarino, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
@@ -116,6 +131,9 @@ with col2:
     st.markdown(titulo_secundario, unsafe_allow_html=True)    
 
     imagen_pagina = Image.open(foto_navarro)
+    st.image(imagen_pagina)     
+    
+    imagen_pagina = Image.open(foto_recortable_navarro)
     st.image(imagen_pagina)     
 
     with open(archivo_recortable_paula_navarro, "rb") as pdf_file:
@@ -141,6 +159,9 @@ with col1:
     st.markdown(titulo_secundario, unsafe_allow_html=True)    
 
     imagen_pagina = Image.open(foto_margalef)
+    st.image(imagen_pagina)   
+    
+    imagen_pagina = Image.open(foto_recortable_margalef)
     st.image(imagen_pagina)     
 
     with open(archivo_recortable_margalef, "rb") as pdf_file:
